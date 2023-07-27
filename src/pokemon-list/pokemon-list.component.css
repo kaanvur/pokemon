@@ -1,0 +1,29 @@
+.list-holder {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.list-holder > * {
+  box-shadow: 6px 6px 5px #000000;
+  border-radius: 5px;
+  aspect-ratio: 4 / 6;
+  background-color: #e5e5f7;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#edfd6355, #edfd63);
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.list-holder img {
+  margin-bottom: auto;
+  width: 100%;
+}
+h1,
+h2 {
+  text-align: center;
+  margin: 2vmin 0;
+}

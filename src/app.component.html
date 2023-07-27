@@ -1,0 +1,10 @@
+<div class="container">
+  <app-favorite-list [FavoritePokemons]="FavoritePokemons"></app-favorite-list>
+  <app-pokemon-search
+    (searchResultsEvent)="onSearchResults($event)"
+  ></app-pokemon-search>
+  <app-pokemon-list
+    (addFavoreteEvent)="FavoritePokemons = $event"
+    [searchResults]="searchResults"
+  ></app-pokemon-list>
+</div>

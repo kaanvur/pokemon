@@ -1,0 +1,16 @@
+.favorite-list {
+  display: flex;
+  overflow: auto;
+  gap: 5px;
+  height: 9vmin;
+}
+.favorite-list > * {
+  flex-shrink: 0;
+  font-size: 2vmin;
+  text-align: center;
+}
+.favorite-list img {
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}

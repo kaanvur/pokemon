@@ -1,0 +1,15 @@
+<div class="input-container">
+  <div class="input-with-icon">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/709px-Vector_search_icon.svg.png"
+      alt=""
+    />
+    <input
+      class="search-pokemon"
+      type="text"
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      placeholder="Search Pokemon"
+    />
+  </div>
+</div>

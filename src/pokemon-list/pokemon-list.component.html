@@ -1,0 +1,13 @@
+<div *ngIf="searchResults && searchResults.length > 0">
+  <h2>Pokémon List</h2>
+  <section class="list-holder">
+    <div (click)="addFavorive(pokemon)" *ngFor="let pokemon of searchResults">
+      <img src="{{ pokemon.photo }}" alt="" />
+      {{ pokemon.name }}
+    </div>
+  </section>
+</div>
+<div *ngIf="!searchResults"><h1>Search Pokemon</h1></div>
+<div *ngIf="searchResults && searchResults.length == 0">
+  <h2>this pokemon never existed</h2>
+</div>
