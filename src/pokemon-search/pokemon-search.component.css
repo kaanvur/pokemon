@@ -12,11 +12,11 @@
   transition: 500ms all ease;
   justify-content: center;
 }
-.input-container:hover {
+.input-container:hover,
+.input-container:has(input:focus) {
   grid-template-columns: 100%;
 }
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: transparent;
   opacity: 0; /* Firefox */
 }
