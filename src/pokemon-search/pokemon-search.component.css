@@ -16,15 +16,6 @@
 .input-container:has(input:focus) {
   grid-template-columns: 100%;
 }
-::placeholder {
-  color: transparent;
-  opacity: 0; /* Firefox */
-}
-.search-pokemon:hover::placeholder,
-.search-pokemon:focus::placeholder {
-  color: grey;
-  opacity: 1;
-}
 .input-with-icon {
   display: flex;
   border-radius: 30px;
