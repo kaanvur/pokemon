@@ -10,9 +10,12 @@ export class PokemonListComponent {
 
   @Output() addFavoreteEvent = new EventEmitter<any>();
   pokemonData: any[] = [];
-  addFavorive(pokemon: any): void {
-    this.pokemonData.push(pokemon);
 
-    this.addFavoreteEvent.emit(this.pokemonData);
+  addFavorive(pokemon: any): void {
+    const isPokemonExists = this.pokemonData.some((p) => p.id === pokemon.id);
+    if (!isPokemonExists) {
+      this.pokemonData.push(pokemon);
+      this.addFavoreteEvent.emit(this.pokemonData);
+    }
   }
 }
